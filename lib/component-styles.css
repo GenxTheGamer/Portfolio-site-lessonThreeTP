@@ -31,11 +31,8 @@ body {
 /** Links **/
 
 .link {
-    box-sizing: border-box;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    /* margin-top: 5rem;
-    margin-bottom: 1rem; */
 }
 
 .primary-link {
@@ -133,16 +130,10 @@ body {
     padding: 2rem 1rem;
     text-align: center;
     color: white;
+    border-top-right-radius: 1rem ;
 }
-
-
 .footer .link {
     color: white;
-}
-
-.footer .footer-head{
-    font-weight: bold;
-    font-size: large;
 }
 
 .footer ul{
