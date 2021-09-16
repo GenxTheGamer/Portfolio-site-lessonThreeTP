@@ -96,7 +96,7 @@ body {
 }
 
 .hero .hero-img {
-    max-width: 350px;
+    max-width: 500px;
     display: block;
     margin: auto;
 }
@@ -107,8 +107,10 @@ body {
     color: var(--dark-grey);
 }
 
-.hero .hero-heading .inverted-hero-heading {
+.inverted-hero-heading {
     color: var(--primary-color);
+    text-align: center;
+    
 }
 
 
@@ -147,4 +149,8 @@ body {
 
 .footer ul{
     padding-inline-start: 0px;
+}
+
+.list-item-inline .footer-img {
+   min-height: 30px;
 }
