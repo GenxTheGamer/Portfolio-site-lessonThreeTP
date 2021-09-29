@@ -12,6 +12,9 @@ hr {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
 
@@ -24,9 +27,23 @@ body {
 }
 
 .container-center {
+    flex-wrap: wrap;
     max-width: 600px;
     margin: auto;
 }
+
+/** Project Span Class **/
+
+.markText {
+    font-size: smaller;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem; 
+    background-color: var(--dark-grey);
+    color: white;
+    border-radius: 0.5rem;
+}
+
 
 /** Links **/
 

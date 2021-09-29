@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventListnersInVanillaJS | Blog</title>
     <link rel=stylesheet href="styles.css" />
-    <title>Home | Adarsh Balak</title>
 </head>
-
 <body>
     <nav class="navigation container">
-        <div class="nav-brand">My Portfolio | Home</div>
+        <div class="nav-brand">What are Event Listeners In VanillaJS | Blog</div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline">
-                <a class="link link-active" href="index.html">Home</a>
+                <a class="link" href="index.html">Home</a>
             </li>
 
             <li class="list-item-inline">
-                <a class="link" href="projects.html">Projects</a>
+                <a class="link " href="projects.html">Projects</a>
 
             </li>
             <li class="list-item-inline">
-                <a class="link" href="blogs.html">Blog</a>
+                <a class="link link-active" href="blogs.html">Blog</a>
             </li>
         </ul>
     </nav>
-
+    
     <header class="hero">
-        <img class="hero-img" src="../images/undraw_select_player_64ca.svg" />
-        <h1 class="hero-heading">Vaibhav Vyas </h1>
-        <h1 class="inverted-hero-heading">The Web Developer</span>
+        <h1 class="hero-heading">What are Event Listeners In VanillaJS ?</h1>
+        <p style="text-align: center;">By Vaibhav Vyas</p>
     </header>
 
-
-    <section class="section ow">
+    <section class="section">
         <div class="container container-center">
-            <h1>My Expertise</h1>
-            <p>HTML, CSS, ReactJs, Python, Javascript.</p>
+          <h2>To understand how they work first we need to know what are event listeners.</h2>  
+            <h3>Definition</h3>
+            <p>Event listeners are basically DOM element which are used to execute something when user does something .
+                For Example:
+                    If we are making a program in which when we click a button it should display a text. We use event listener on button.
+                    Now this button listens to whatever event we have assigned to it.
+                    <section class="section ow">
+                    "btn.addEventListener("click",functionName(){
+                        console.log("clicked");
+                    });"
+                    </section>
+                We can also use them for a textarea/input in which when we change something it detects and act accordingly.
+            </p>
+            <hr>
+            <h3>How is it different from onClick?</h3>
+            <p>OnClick is a html attribute which can be used in place of addEventListener().
+                But in modern practise we should not use it as it is harder to link html & javascript with it.
+            </p>
+            <hr>
+            <h3>Advantages of Event Listener</h3>
+            <p>
+                <ol>
+                    <li>
+                        Helps in Modularity of Functions.
+                    </li>
+                    <li>
+                        Code looks clean.
+                    </li>
+                    <li>
+                        Good Practise.
+                    </li>
+                </ol>
+            </p>
         </div>
+
     </section>
 
-    <section class="section ">
-        <div class="container container-center">
-            <h1>Projects</h1>
-            <p>Here are my projects</p>
-            <a class="link primary-link" href="/projects.html">My Projects</a>
-        </div>
-    </section>
-
-    <section class="section ow">
-        <div class="container container-center">
-            <h1>Blogs</h1>
-            <p>Here are my blogs</p>
-            <a class="link secondary-link" href="/blogs.html">My Blogs</a>
-        </div>
-    </section>
 
     <footer class="footer">
         <div class="footer-head">
@@ -70,6 +83,8 @@
         </ul>
 
     </footer>
-</body>
 
+    
+
+</body>
 </html>
